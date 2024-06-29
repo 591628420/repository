@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+   name: spring-component
+
+  cloud:
+    nacos:
+      discovery:
+        #server-addr: 127.0.0.1:8848
+        namespace: 98d4eb9e-ac16-4980-abce-a73628a8e17e
+        group: SPRINGBOOT_GROUP
+        username: nacos
+        password: nacos
+      server-addr: 127.0.0.1:8848
+      config:
+        #server-addr: 127.0.0.1:8848
+        namespace: 98d4eb9e-ac16-4980-abce-a73628a8e17e
+        group: SPRINGBOOT_GROUP
+        file-extension: properties
+#  config:
+#    import:
+#      - nacos:spring-component
+        #file-extension: properties
+#        extension-configs:
+#          - data-id: application.properties
+#            refresh: true
